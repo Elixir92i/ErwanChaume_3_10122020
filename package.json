@@ -1,0 +1,19 @@
+{
+  "name": "p3_chaume_erwan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SASS/styles.scss:./CSS/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elixir92i/ErwanChaume_3_10122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elixir92i/ErwanChaume_3_10122020/issues"
+  },
+  "homepage": "https://github.com/Elixir92i/ErwanChaume_3_10122020#readme"
+}
