@@ -6,6 +6,9 @@ body {
 a {
   text-decoration: none; }
 
+h2 {
+  margin-left: 5%; }
+
 /*##### HEADER #####*/
 .logo {
   align-items: center;
@@ -56,7 +59,9 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 42px;
+  padding-top: 30px; }
   .function h2 {
     align-self: start; }
   .function__cards {
@@ -95,7 +100,9 @@ a {
 /*##### RESTAURANT #####*/
 .restaurants {
   background-color: #f6f6f6;
-  width: 100%; }
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 46px; }
   .restaurants__all {
     display: flex;
     align-items: center;
@@ -113,6 +120,8 @@ a {
   /*&--img{
       height: 174px;
   }*/ }
+  .restaurants__cards a {
+    color: black; }
   .restaurants__cards--img img {
     width: 100%;
     height: 174px;
@@ -122,16 +131,39 @@ a {
     position: absolute;
     bottom: 0px;
     background-color: white;
-    width: 100%; }
+    width: 100%;
+    height: 77px;
+    padding-left: 10px;
+    padding-right: 10px; }
     .restaurants__cards--desc h3 {
       margin: 0;
-      padding: 0; }
+      padding-top: 18px; }
+    .restaurants__cards--desc p {
+      margin-top: 0; }
     .restaurants__cards--desc .far {
       position: absolute;
       font-size: 27px;
       top: 30%;
-      right: 10px; }
+      right: 30px; }
 
 /*##### FOOTER #####*/
+footer {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 26px;
+  background-color: #353535;
+  color: white; }
+  footer p {
+    font-family: 'Shrikhand'; }
+  footer li {
+    list-style: none;
+    margin-bottom: 10px; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
+  footer a {
+    color: white; }
+  footer .fas {
+    margin-right: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
