@@ -441,5 +441,11 @@ footer {
 @media (min-width: 990px) {
   .function__cards {
     width: 30%; } }
+@media (max-width: 1024px) {
+  .popupcontent {
+    width: 60%; } }
+@media (max-width: 550px) {
+  .popupcontent {
+    width: 85%; } }
 
 /*# sourceMappingURL=styles.css.map */

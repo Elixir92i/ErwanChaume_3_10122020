@@ -540,3 +540,14 @@ footer{
         width: 30%;
     }
 }
+
+@media (max-width: 1024px){
+    .popupcontent{
+        width: 60%;
+    }
+}
+@media (max-width: 550px){
+    .popupcontent{
+        width: 85%;
+    }
+}
