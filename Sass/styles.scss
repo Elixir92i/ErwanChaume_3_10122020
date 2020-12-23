@@ -326,8 +326,6 @@ header{
         align-items: center;
         margin-bottom: 26px;
         border-radius: 20px;
-        -webkit-box-shadow: 8px 7px 23px -20px rgba(0,0,0,1);
-        -moz-box-shadow: 8px 7px 23px -20px rgba(0,0,0,1);
         box-shadow: 8px 7px 23px -20px rgba(0,0,0,1);
 
         &:hover{
@@ -432,8 +430,8 @@ header{
         justify-content: center;
         cursor: pointer;
         position: absolute;
-        top: 40%;
-        right: 0;
+        top: 80%;
+        right: -30px;
         margin-right: 50px;
         background-color: #000;
     }

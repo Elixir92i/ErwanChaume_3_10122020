@@ -276,8 +276,6 @@ header {
     align-items: center;
     margin-bottom: 26px;
     border-radius: 20px;
-    -webkit-box-shadow: 8px 7px 23px -20px black;
-    -moz-box-shadow: 8px 7px 23px -20px black;
     box-shadow: 8px 7px 23px -20px black; }
     .function__cards:hover {
       background-color: #f5edff; }
@@ -367,8 +365,8 @@ header {
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  top: 40%;
-  right: 0;
+  top: 80%;
+  right: -30px;
   margin-right: 50px;
   background-color: #000; }
 .menu__btn:before {
