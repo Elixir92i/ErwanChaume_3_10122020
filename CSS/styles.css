@@ -16,13 +16,6 @@ a {
 h2 {
   margin-left: 5%; }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-    margin-top: 8px; }
-  100% {
-    opacity: 1;
-    margin-top: 0px; } }
 @keyframes loader {
   0% {
     opacity: 1;
@@ -110,13 +103,15 @@ h2 {
 
 .emailbold {
   font-weight: bold; }
+  .emailbold a {
+    color: #9356DC; }
 
 .overlay:target {
   visibility: visible;
   opacity: 1; }
 
 .popupcontent {
-  margin: 200px auto;
+  margin: 150px auto;
   padding: 20px;
   background: #f6f6f6;
   border-radius: 5px;
@@ -143,6 +138,19 @@ h2 {
     .popupcontent .content p {
       margin-bottom: 10px; }
 
+.titlecontact {
+  position: relative;
+  padding-bottom: 8px;
+  font-weight: lighter; }
+  .titlecontact::after {
+    content: "";
+    background-color: #99E2D0;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
 form {
   display: flex;
   flex-direction: column; }
@@ -156,7 +164,7 @@ input {
   width: 95%;
   border-style: none;
   outline: none;
-  border: black 1px solid;
+  border: #7e7e7e 1px solid;
   border-radius: 5px; }
 
 textarea {
@@ -164,8 +172,11 @@ textarea {
   resize: none;
   border-style: none;
   outline: none;
-  border: black 1px solid;
+  border: #7e7e7e 1px solid;
   border-radius: 5px; }
+
+::placeholder {
+  font-family: 'Roboto'; }
 
 .submit {
   margin: auto;
@@ -182,7 +193,7 @@ textarea {
   border-radius: 12px;
   color: white;
   box-shadow: 10px 7px 26px -16px black;
-  transition-duration: 150ms; }
+  transition-duration: 250ms; }
   .submit:hover {
     background: linear-gradient(355deg, #9b63df, #ff88de);
     box-shadow: 10px 7px 26px -10px black; }
@@ -200,6 +211,7 @@ header {
 
 /*##### LOCALISATION #####*/
 .localisation {
+  position: relative;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -233,7 +245,7 @@ header {
     border-radius: 25px;
     color: white;
     box-shadow: 10px 7px 26px -16px black;
-    transition-duration: 150ms; }
+    transition-duration: 250ms; }
     .info__btn:hover {
       background: linear-gradient(355deg, #9b63df, #ff88de);
       box-shadow: 10px 7px 26px -10px black; }
@@ -295,7 +307,8 @@ header {
   background-color: #f6f6f6;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 46px; }
+  padding-bottom: 46px;
+  position: relative; }
   .restaurants__all {
     display: flex;
     align-items: center;
@@ -311,9 +324,6 @@ header {
   margin-bottom: 18px;
   border-radius: 12px;
   box-shadow: 0px 3px 26px -16px black;
-  animation: appear 1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease;
   transition: 250ms; }
   .restaurants__cards:hover {
     box-shadow: 0px 3px 26px -8px black; }
@@ -336,11 +346,6 @@ header {
       padding-top: 18px; }
     .restaurants__cards--desc p {
       margin-top: 0; }
-
-.delay--1 {
-  animation-delay: 0.2s; }
-.delay--2 {
-  animation-delay: 0.4s; }
 
 .new {
   background-color: #99E2D0;

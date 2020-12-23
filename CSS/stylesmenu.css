@@ -110,13 +110,15 @@ h2 {
 
 .emailbold {
   font-weight: bold; }
+  .emailbold a {
+    color: #9356DC; }
 
 .overlay:target {
   visibility: visible;
   opacity: 1; }
 
 .popupcontent {
-  margin: 200px auto;
+  margin: 150px auto;
   padding: 20px;
   background: #f6f6f6;
   border-radius: 5px;
@@ -143,6 +145,19 @@ h2 {
     .popupcontent .content p {
       margin-bottom: 10px; }
 
+.titlecontact {
+  position: relative;
+  padding-bottom: 8px;
+  font-weight: lighter; }
+  .titlecontact::after {
+    content: "";
+    background-color: #99E2D0;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
 form {
   display: flex;
   flex-direction: column; }
@@ -156,7 +171,7 @@ input {
   width: 95%;
   border-style: none;
   outline: none;
-  border: black 1px solid;
+  border: #7e7e7e 1px solid;
   border-radius: 5px; }
 
 textarea {
@@ -164,8 +179,11 @@ textarea {
   resize: none;
   border-style: none;
   outline: none;
-  border: black 1px solid;
+  border: #7e7e7e 1px solid;
   border-radius: 5px; }
+
+::placeholder {
+  font-family: 'Roboto'; }
 
 .submit {
   margin: auto;
@@ -208,6 +226,7 @@ header .fas {
 
 /*##### BG__IMG #####*/
 .bg__img {
+  position: relative;
   max-width: 100%;
   object-fit: cover;
   width: 100%;

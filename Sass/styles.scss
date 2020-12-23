@@ -31,17 +31,6 @@ h2{
     margin-left: 5%;
 }
 
-@keyframes appear{
-    0%{
-        opacity: 0;
-        margin-top: 8px;
-    }
-    100%{
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
-
 @keyframes loader{
     0%{
         opacity: 1;
@@ -154,6 +143,9 @@ h2{
 
 .emailbold{
     font-weight: bold;
+    a{
+        color: $purple;
+    }
 }
 
 .overlay:target {
@@ -162,7 +154,7 @@ h2{
 }
 
 .popupcontent {
-    margin: 200px auto;
+    margin: 150px auto;
     padding: 20px;
     background: $grey;
     border-radius: 5px;
@@ -195,6 +187,21 @@ h2{
     }
   }
 
+.titlecontact{
+    position: relative;
+    padding-bottom: 8px;
+    font-weight: lighter;
+    &::after{
+        content: "";
+        background-color: $green;
+        width: 40px;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -210,7 +217,7 @@ input{
     width: 95%;
     border-style: none;
     outline: none;
-    border: black 1px solid;
+    border:#7e7e7e 1px solid;
     border-radius: 5px;
 }
 textarea{
@@ -218,8 +225,12 @@ textarea{
     resize: none;
     border-style: none;
     outline: none;
-    border: black 1px solid;
+    border: #7e7e7e 1px solid;
     border-radius: 5px;
+}
+
+::placeholder{
+    font-family: 'Roboto';
 }
 .submit{
     margin: auto;
@@ -234,7 +245,7 @@ textarea{
     border-radius: 12px;
     color: white;
     box-shadow: 10px 7px 26px -16px rgba(0,0,0,1);
-    transition-duration: 150ms;
+    transition-duration: 250ms;
     &:hover{
         background: linear-gradient(355deg, lighten($purple, 3%), lighten($pink, 3%));
         box-shadow: 10px 7px 26px -10px rgba(0,0,0,1);
@@ -253,6 +264,7 @@ header{
 
 /*##### LOCALISATION #####*/
 .localisation{
+    position: relative;
     @include center;
     flex-direction: row;
     font-weight: bold;
@@ -283,7 +295,7 @@ header{
         border-radius: 25px;
         color: white;
         box-shadow: 10px 7px 26px -16px rgba(0,0,0,1);
-        transition-duration: 150ms;
+        transition-duration: 250ms;
         &:hover{
             background: linear-gradient(355deg, lighten($purple, 3%), lighten($pink, 3%));
             box-shadow: 10px 7px 26px -10px rgba(0,0,0,1);
@@ -352,6 +364,7 @@ header{
     width: 100%;
     padding-top: 30px;
     padding-bottom: 46px;
+    position: relative;
     &__all{
         display: flex;
         align-items: center;
@@ -368,9 +381,6 @@ header{
     margin-bottom: 18px;
     border-radius: 12px;
     box-shadow: 0px 3px 26px -16px rgba(0,0,0,1);
-    animation: appear 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
     transition: 250ms;
     &:hover{
         box-shadow: 0px 3px 26px -8px rgba(0,0,0,1);
@@ -401,14 +411,6 @@ header{
     }
 }
 
-.delay{
-    &--1{
-        animation-delay: 0.2s;
-    }
-    &--2{
-        animation-delay: 0.4s;
-    }
-}
 .new{
     background-color: $green;
     color: #008766;
