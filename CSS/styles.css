@@ -310,23 +310,21 @@ header {
   .restaurants__all {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: space-between; }
+    flex-direction: column; }
+  .restaurants a {
+    color: black; }
 
 .restaurants__cards {
   position: relative;
   overflow: hidden;
   width: 90%;
   height: 250px;
-  display: flex;
   margin-bottom: 18px;
   border-radius: 12px;
   box-shadow: 0px 3px 26px -16px black;
   transition: 250ms; }
   .restaurants__cards:hover {
     box-shadow: 0px 3px 26px -8px black; }
-  .restaurants__cards a {
-    color: black; }
   .restaurants__cards--img img {
     width: 100%;
     height: 174px;
@@ -366,8 +364,7 @@ header {
   cursor: pointer;
   position: absolute;
   top: 80%;
-  right: -30px;
-  margin-right: 50px;
+  right: 20px;
   background-color: #000; }
 .menu__btn:before {
   position: absolute;

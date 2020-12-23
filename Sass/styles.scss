@@ -367,7 +367,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-between;
+    }
+    a{
+        color: black;
     }
 }
 .restaurants__cards{
@@ -375,16 +377,12 @@ header{
     overflow: hidden;
     width: 90%;
     height: 250px;
-    display: flex;
     margin-bottom: 18px;
     border-radius: 12px;
     box-shadow: 0px 3px 26px -16px rgba(0,0,0,1);
     transition: 250ms;
     &:hover{
         box-shadow: 0px 3px 26px -8px rgba(0,0,0,1);
-    }
-    a{
-        color: black;
     }
     &--img img{
         width: 100%;
@@ -431,8 +429,7 @@ header{
         cursor: pointer;
         position: absolute;
         top: 80%;
-        right: -30px;
-        margin-right: 50px;
+        right: 20px;
         background-color: #000;
     }
 
